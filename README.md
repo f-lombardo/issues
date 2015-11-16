@@ -1,6 +1,8 @@
 # Issues
 
-**TODO: Add description**
+**Exercise from "Programming Elixir**
+
+Little project to show issues from github project
 
 ## Installation
 
