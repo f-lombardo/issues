@@ -1,7 +1,7 @@
 defmodule Issues.CLI do
   def default_count, do: 4
 
-  def run(argv) do
+  def main(argv) do
     argv
       |> parse_args
       |> process
@@ -14,9 +14,12 @@ defmodule Issues.CLI do
   end
   def process({user, project, count}) do
     Issues.GithubIssues.fetch(user, project)
+    |> IO.inspect
     |> decode_response
+    |> IO.inspect
     |> convert_to_list_of_hashdicts
     |> sort_into_ascending_order
+    |> Enum.take(count)
   end
 
   def sort_into_ascending_order(list_of_issues) do

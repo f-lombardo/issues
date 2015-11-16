@@ -1,6 +1,6 @@
 # Issues
 
-**Exercise from "Programming Elixir**
+**Exercise from "Programming Elixir"**
 
 Little project to show issues from github project
 
@@ -19,3 +19,15 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
         def application do
           [applications: [:issues]]
         end
+
+## Running
+
+mix escript.buid
+
+On Unix
+
+./issues
+
+On Windows
+
+escript .\issues
