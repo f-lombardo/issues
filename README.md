@@ -22,7 +22,7 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
 
 ## Running
 
-    mix escript.buid
+    mix escript.build
 
 On Unix
 
