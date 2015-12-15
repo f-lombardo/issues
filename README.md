@@ -31,3 +31,7 @@ On Unix
 On Windows
 
     escript .\issues
+
+Another way of running the program
+
+    mix issues <user> <project> [count]

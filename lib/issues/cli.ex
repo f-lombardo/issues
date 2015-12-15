@@ -7,6 +7,7 @@ defmodule Issues.CLI do
       |> process
   end
 
+
   def process(:help) do
     IO.puts """
     Usage: issues <user> <project> [count]
